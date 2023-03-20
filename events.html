@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Documents</title>
+</head>
+
+
+<!--  <body id="gingera" onload="water()"> -->
+
+
+ 
+ <h2 id="events">JS Events</h2>  
+
+  <button onclick='document.getElementById("events").innerHTML = Date();'>Click Me</button>
+
+
+  <h3 id="">Coldsis</h3> 
+
+  <button id="click" onclick='document.getElementById("click").innerHTML = Date();'>Read Me</button> 
+   
+ 
+
+
+ <h1 id="coding">Coding Class</h1>
+
+<h3 id="handlers" onclick="getDate()">Events handlers</h3>
+
+
+
+   
+
+   <h4 id="class" onclick="Welcome()">Class hours</h4>
+
+   <h5 id="learning">Learning hours</h5>
+ 
+    
+
+
+
+   	  <h4 id="page" onmouseover="help()" onmouseout="helpout()">text page</h4>
+
+     <h5 id="party">house party</h5>
+
+  
+ 
+   <h2 id="juice">Riam juice hub</h2>
+   <h2 id="more" onmouseover="drinks()" onmouseout="water()">Cocktails and more</h2>
+
+   
+
+
+
+   <h2 id="rice" onclick="plantain()">Rice with stew</h2>
+   <h2 id="beans" onmouseover="stew()">Beans with plantain</h2>
+
+  
+
+   <h4 id="so">Sobolo</h4>
+   <h2 id="ginger" onload="type()">Pineginger</h2>
+
+     <br>
+    <br>
+    <label for="">Your Name</label>
+   	<input type="text" name="fname" id="fname">
+   	<br>
+   	<br>
+
+   	<label>Email</label>
+   	<input type="email" name="email" id="email">
+   	<br>
+   	<br>
+
+
+   	<label>Date of birth</label>
+   	<input type="date" name="date" id="date">
+   	<br>
+   	
+
+   	<br>
+	<button id="submit" onclick="submit()">Submit</button>
+
+	<h1 id="result"></h1>
+
+
+
+	<h1 id="get"></h1>
+	<h2 id="bring"></h2>
+	<p id="go"></p>
+
+
+
+
+
+
+   <script type="text/javascript">
+   	
+  //    function water(){
+		// 	document.getElementById('gingera').innerHTML = alert('page load successfully');
+		// }
+
+
+   	function type(){
+   		document.getElementById("ginger").innerHTML=alert('Lamugee')   
+
+   			}
+
+
+   			 function plantain(){
+   	 	document.getElementById("rice").innerHTML='Yam with Kontomire'
+   	 }
+
+   	 function stew(){
+   	 	document.getElementById("beans").innerHTML='Tuo with Ayoyo'
+   	 }
+
+
+   	  	function drinks(){
+   		document.getElementById("more").innerHTML='mojtio';
+   	}
+
+   	function water(){
+   		document.getElementById("more").innerHTML='strawberry cocktail'
+   	}
+
+
+
+   	 function help(){
+   	 	document.getElementById("page").innerHTML='how may we help you';
+   	 }
+
+
+   	  function helpout(){
+   	 	document.getElementById("page").innerHTML='text page';
+   	 }
+
+
+
+   	 function Welcome (){
+   	 	document.getElementById("class").innerHTML='Welcome User';
+
+   	 }
+
+
+
+   	 function getDate(){
+		document.getElementById("handlers").innerHTML=Date();
+	}
+
+
+	function submit(){
+		let x=document.getElementById('fname');
+		let v=document.getElementById("submit").innerHTML="Submit";
+		document.getElementById("result").innerHTML="Welcome "+x.value
+
+	}
+
+
+	// function submit(){
+	// 	let x=document.getElementById('fname');
+	// 	let y=document.getElementById('email')
+	// 	let z=document.getElementById('date')
+	// 	let v=document.getElementById("submit").innerHTML="Submit";
+	// 	// document.getElementById("result").innerHTML="Welcome "+x.value + " Your email address is "+ y.value + " You were born on"+z.value;
+  //    }
+    
+
+    function submit(){
+    	let x=document.getElementById('fname');
+		let y=document.getElementById('email')
+		let z=document.getElementById('date')
+		let v=document.getElementById("submit").innerHTML="Submit";
+		document.getElementById("get").innerHTML="Welcome "+x.value;
+		document.getElementById("bring").innerHTML= " Your email address is "+ y.value;
+		document.getElementById("go").innerHTML= " You were born on "+z.value;
+		document.getElementById("result").innerHTML="Welcome "+x.value + " Your email address is "+ y.value + " You were born on"+z.value;
+     }
+    
+     
+     
+    
+    
+		
+
+
+
+
+
+   </script> 
+ 
+
+ 
+
+
+
+
+  
+
+
+ 
+
+
+
+</body>
+</html>
